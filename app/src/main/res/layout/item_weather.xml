@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:id="@+id/item_weather_image"
+        android:layout_width="140dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        />
+
+    <TextView
+        android:id="@+id/item_weather_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/WeatherItemText"
+        app:layout_constraintTop_toBottomOf="@id/item_weather_image"
+        />
+
+    <TextView
+        android:id="@+id/item_weather_end_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/WeatherItemText"
+        app:layout_constraintTop_toBottomOf="@id/item_weather_event"
+        />
+
+    <TextView
+        android:id="@+id/item_weather_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/WeatherItemText"
+        app:layout_constraintTop_toBottomOf="@id/item_weather_end_duration"
+        />
+
+    <!-- View can be replaced with a divider for the list -->
+    <View
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_weather_sender"
+        android:background="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

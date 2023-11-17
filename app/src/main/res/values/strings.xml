@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherSampel</string>
+    <string name="no_weather_data">No weather data, check the internet and try again</string>
+    <string name="reload_weather_date">Reload Weather</string>
+    <string name="weather_ends">End:</string>
+    <string name="weather_duration">Duration:</string>
+    <string name="time_error">Time error</string>
+    <string name="event_completed">Event completed</string>
+</resources>
